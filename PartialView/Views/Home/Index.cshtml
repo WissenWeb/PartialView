@@ -1,0 +1,19 @@
+﻿@using PartialView.Controllers;
+@model TestModel
+
+
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@Html.TextBoxFor(s=>s.Name,new {placeholder="Name alanı indexden gelmiştir."})
+
+
+@Html.Partial("_modelPartial",Model)
+
+@Html.Partial("_mypartial")
